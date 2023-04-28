@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  color: #555;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+/* top bar */
+
+#top_bar {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #d14b78;
+  color: #fff;
+  padding: 8px 0;
+}
+
+/* main bar */
+
+#main_bar {
+  padding: 48px 0 48px 0;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav>ul {
+  display: flex;
+  gap: 24px;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.17);
+  padding: 16px 32px;
+  background-color: #fff;
+}
+
+nav li:hover ul li {
+  padding: 6px 0;
+}
+
+nav li:hover ul li:not(:last-child) {
+  border-bottom: solid #222 1px;
+}
+
+#search form {
+  display: flex;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-color: #222;
+  border-bottom-style: solid;
+}
+
+#search form input {
+  border-width: 0;
+}
+
+#search img {
+  width: 24px;
+}
+
+/* slider */
+
+#slider img {
+  width: 100%;
+}
+
+#slider li:not(.active) {
+  display: none;
+}
+
+/* main section */
+#sections {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.section {
+  height: 300px;
+}
+
+.section.large {
+  height: 600px;
+}
+
+.section img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+
+footer {
+  margin-top: 40px;
+  background-color: #f0f0f0;
+}
+
+#shopping_policy {
+  position: relative;
+  top: -40px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #cc9933;
+  background-color: #fff;
+}
+
+#shopping_policy ul {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#shopping_policy li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#shopping_policy img {
+  width: 28px;
+}
+
+#shopping_policy .title {
+  color: #222;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#shopping_policy .description {
+  color: #666;
+}
+
+#payment_methods {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+#payment_methods .header {
+  text-align: center;
+}
+
+#payment_methods .title {
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#payment_methods ul {
+  display: flex;
+  gap: 32px;
+}
